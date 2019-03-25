@@ -1,1 +1,56 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nhóm 13</title>
+    <link rel="stylesheet" href="css/style3DPage.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <input type="checkbox" id="cDoor" />
+        <input type="checkbox" id="cRoof" />
+        <input type="checkbox" id="cWinL" />
+        <input type="checkbox" id="cWinR" />
+        <div id="wrap">
+            <div id="ground">
+                <svg viewBox="0 0 50 55">
+                    <path id="wFront" d="m0,55h18v-26h14v26h18v-30l-25,-25-25,25z" />
+                </svg>
+                <svg viewBox="0 0 50 55">
+                    <path id="wBack" d="m0,55h50v-30l-25,-25-25,25zm7,-25h15v15h-15zm21,0h15v15h-15z"
+                        fill-rule="evenodd" />
+                </svg>
+                <div></div>
+                <div></div>
+                <div></div>
+                <svg viewBox="0 0 50 35.36">
+                    <defs>
+                        <pattern id="pattern" patternUnits="userSpaceOnUse" width="3" height="5">
+                            <image
+                                xlink:href="https://s-media-cache-ak0.pinimg.com/736x/75/d4/28/75d42817a3c36f0da00b9ef37b6bcafa.jpg"
+                                x="0" y="0" width="8.5" height="8.5" />
+                        </pattern>
+                    </defs>
+                    <path id="wRoof" d="m0,0h50v35.36h-50zm20,15h10v15h-10z" fill-rule="evenodd" />
+                </svg>
+                <div id="dDoor"><label for="cDoor"></label></div>
+                <div id="dRoof"><label for="cRoof"></label></div>
+                <div id="dWinL">
+                    <label for="cWinL"></label>
+                    <label for="cWinL"></label>
+                </div>
+                <div id="dWinR">
+                    <label for="cWinR"></label>
+                    <label for="cWinR"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='js/3dPage.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
