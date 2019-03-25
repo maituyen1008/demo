@@ -3,6 +3,10 @@ var router = express.Router();
 var userName = 'maituyen';
 var passWord = '123456';
 
+router.get('/', function(request, response) {
+    response.send('Welcome to My App');
+})
+
 router.get('/login', function(request, response) {
     response.render('login');
 })
