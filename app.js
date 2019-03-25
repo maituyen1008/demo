@@ -4,6 +4,8 @@ var bodyparser = require('body-parser');
 var app = express();
 var server = require('http').createServer(app);
 
+var port = process.env.PORT || 8000;
+
 var router = require('./routes/router')
 
 app.set('views', path.join(__dirname, 'views'));
@@ -15,4 +17,4 @@ app.use(bodyparser.urlencoded({ extended: false }));
 
 app.use('/', router);
 
-server.listen(8000);
+server.listen(port);
