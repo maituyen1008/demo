@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var userName = 'maituyen';
-var passWord = '123456';
+var userName = 'admin';
+var passWord = 'admin';
 
 router.get('/', function(request, response) {
     response.send('Welcome to My App');
